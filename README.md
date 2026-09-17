@@ -1,6 +1,6 @@
 # ReactWithProfessorSpencer
 
-Ett React-projekt byggt med Vite, TypeScript och ESLint som följer YouTube-kursen "Learn to Program in React" från Professor Spencer.
+A React-project built with Vite, TypeScript and ESLint that follows the YouTube-course "Learn to Program in React" held by Professor Spencer.
 https://www.youtube.com/playlist?list=PLdmQEhafuhGqFV66g47tUZgw86BZCHmkF
 
 ## Tekniker
@@ -13,8 +13,8 @@ https://www.youtube.com/playlist?list=PLdmQEhafuhGqFV66g47tUZgw86BZCHmkF
 
 - ESLint
  
-## Komma igång
+## Get started
 
-Installera beroenden:
+Install dependencies:
 
 npm install
