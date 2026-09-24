@@ -1,5 +1,9 @@
 import './App.css'
 
+function Welcome(){
+  return <h1>Criminally Underrated Bands</h1>;
+}
+
 function BandList() {
   const bandNames = ['Dire straits', 'R.E.M', 'Collective Soul'];
   
@@ -15,6 +19,7 @@ return (
 function App() {
  return (
     <>
+      <Welcome/>
       <BandList/>    
     </>
   )
