@@ -15,7 +15,11 @@ const bandNames = [
   {
     name: 'Collective Soul', 
     members: 'Ed Roland, Dean Roland, David Neal, Ross Childress, Shane Evans', 
-    formed: 1992}
+    formed: 1992},
+  {
+    name: 'Traffic', 
+    members: 'Steve Winwood, Jim Capaldi, Chris Wood, Dave Mason', 
+    formed: 1967}
 ];
 
 function Welcome(){
@@ -26,8 +30,6 @@ function Welcome(){
 //De tre delar av information som skapar ett "Band"
 //tar emot 3 properties
 function Band({name, members, formed} : {name: string; members: string; formed: number;}){
-
-  const singleBand = bandNames[0];
 
   return (
     <>
@@ -41,10 +43,15 @@ function Band({name, members, formed} : {name: string; members: string; formed: 
 
 //Här finns loopen som målar upp bandlistan
 //BandList funktionen måste kunna avgöra vilket band som ska skrivas ut från listan
+// "..." = Spread operator
 function BandList() {
   return (
   <>
-    <Band/>
+  {
+    bandNames.map((singleBand) => (
+      <Band {...singleBand} />
+    ))
+  }
   </>
 );  
 }
